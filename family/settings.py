@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app_family',
 ]
 
 MIDDLEWARE = [
@@ -49,13 +50,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Family.urls'
+ROOT_URLCONF = 'family.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/carlos/Escritorio/Proyecto/Django/Proyecto Django/Family/Family/templates/templates.html',
+            '/home/carlos/Escritorio/Proyecto/Django/Proyecto Django/Family/family/templates/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -69,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Family.wsgi.application'
+WSGI_APPLICATION = 'family.wsgi.application'
 
 
 # Database
