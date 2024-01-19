@@ -16,12 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from family.views import (main_instruction
+import datetime
+from family.views import (main_instruction,
+                          create_family,
+                          mostrar,
 
 )
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('intro/', main_instruction)
+    path('intro/', main_instruction),
+    path('agregar_familiar/<str:name>/<str:last_name>/<int:age>/<str:birth>/<str:tipo>/', create_family),
+    path('mostrar/', mostrar)
 ]
